@@ -7,6 +7,7 @@
 3. redux or reactQuery 등 상태관리 라이브러리(예정)
 4. Jest [https://www.daleseo.com/jest-basic/]
 5. SASS
+6. dayjs
 
 ## 파일구조
 
