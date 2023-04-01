@@ -1,11 +1,9 @@
 import React from "react";
-
-interface LayoutProps {
-  children?: React.ReactNode;
-}
+import { LayoutProps } from "../../../types/reactType";
+import { NavbarWrapper } from "./style";
 
 const Navbar = ({ children }: LayoutProps) => {
-  return <>navbar</>;
+  return <NavbarWrapper>navbar</NavbarWrapper>;
 };
 
 export default Navbar;
