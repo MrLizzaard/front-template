@@ -7,7 +7,7 @@ function App() {
 
   // auth시 isAut
 
-  return <div>{isAuthorized ? <Router /> : <Login setIsAuthorized={setIsAuthorized} />}</div>;
+  return <div>{isAuthorized ? <Router setIsAuthorized={setIsAuthorized} /> : <Login setIsAuthorized={setIsAuthorized} />}</div>;
 }
 
 export default App;

@@ -5,10 +5,10 @@ import { LayoutProps } from "../../types/reactType";
 import Mainpage from "./Mainpage/Mainpage";
 import SubHeader from "./SubHeader/SubHeader";
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, setIsAuthorized }: LayoutProps) => {
   return (
     <>
-      <Navbar />
+      <Navbar setIsAuthorized={setIsAuthorized} />
       <Sidebar />
       <SubHeader />
       <Mainpage>{children}</Mainpage>
