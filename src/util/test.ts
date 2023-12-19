@@ -1,3 +1,0 @@
-function testUtilFunction() {}
-
-export { testUtilFunction };
