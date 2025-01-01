@@ -4,7 +4,7 @@ const Weather = () => {
   const { data, isLoading } = useWeatherApi();
 
   if (isLoading) {
-    return <div>로딩중</div>;
+    return <div>페이지</div>;
   } else {
     return <div>{data}</div>;
   }
