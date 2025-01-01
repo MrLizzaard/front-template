@@ -6,5 +6,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - ${PORT}:${PORT}
+    restart: "always"
     environment:
       - NODE_ENV=${NODE_ENV}
