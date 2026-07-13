@@ -4,8 +4,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    restart: always
     ports:
-      - ${PORT}:${PORT}
-    restart: "always"
-    environment:
-      - NODE_ENV=${NODE_ENV}
+      - "${PORT}:80"
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:
+    external: true

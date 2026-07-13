@@ -1,8 +1,7 @@
-import { AxiosError, AxiosRequestConfig } from "./../../node_modules/axios/index.d";
-import axios from "axios";
+import axios, { type AxiosError, type AxiosRequestConfig } from "axios";
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_HOST,
+  baseURL: import.meta.env.VITE_API_HOST,
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",

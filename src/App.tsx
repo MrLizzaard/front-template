@@ -1,21 +1,20 @@
-// import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Suspense } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { RecoilRoot } from "recoil";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Provider as JotaiProvider } from "jotai";
 import AuthPage from "./apps/AuthPage";
-import { QueryClient, QueryClientProvider } from "react-query";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <RecoilRoot>
+        <JotaiProvider>
           <QueryClientProvider client={queryClient}>
             <Suspense fallback={<>로딩중</>}>
               <AuthPage />
             </Suspense>
           </QueryClientProvider>
-        </RecoilRoot>
+        </JotaiProvider>
       </BrowserRouter>
     </>
   );

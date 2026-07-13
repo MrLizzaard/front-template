@@ -1,5 +1,5 @@
 import AppRouter from "../router/AppRouter";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const AuthPage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);

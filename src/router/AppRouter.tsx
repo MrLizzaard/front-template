@@ -1,11 +1,11 @@
-import React, { lazy } from "react";
+import { lazy } from "react";
 import { Navigate, useRoutes } from "react-router-dom";
 
 const About = lazy(() => import("../pages/About"));
 const Weather = lazy(() => import("../pages/Weather"));
 
 const AppRouter = () => {
-  let element = useRoutes([
+  const element = useRoutes([
     {
       path: "/main",
       element: <Navigate to="/" />,
