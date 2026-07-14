@@ -1,0 +1,48 @@
+.main-layout {
+  min-height: 100vh;
+}
+
+.main-layout-logo {
+  height: 28px;
+  margin: 8px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main-layout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.main-layout-toggle {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 4px;
+}
+
+.main-layout-user {
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.main-layout-content {
+  margin: 8px;
+  padding: 8px;
+  background: #fff;
+  min-height: calc(100vh - 44px - 16px);
+}
+
+.main-layout-tabs {
+  margin-bottom: 8px;
+}
+
+.main-layout-tabs .ant-tabs-nav {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "idx": 1,
+    "id": "fml2admin",
+    "pw": "0000",
+    "userName": "관리자",
+    "auth": "Admin"
+  },
+  {
+    "idx": 2,
+    "id": "user01",
+    "pw": "user123",
+    "userName": "김철수",
+    "auth": "User"
+  },
+  {
+    "idx": 3,
+    "id": "user02",
+    "pw": "user123",
+    "userName": "이영희",
+    "auth": "User"
+  }
+]
