@@ -1,6 +1,7 @@
 import { Suspense, memo } from "react";
 import { resolvePageElement } from "../../router/pageRegistry";
 import { CurrentPathContext } from "../../router/currentPathContext";
+import LoadingFallback from "../../components/LoadingFallback";
 
 interface TabPaneProps {
   path: string;
@@ -17,7 +18,7 @@ const TabPane = memo(({ path, active }: TabPaneProps) => {
   return (
     <div style={{ display: active ? "block" : "none" }}>
       <CurrentPathContext.Provider value={path}>
-        <Suspense fallback={<>로딩중</>}>{element ?? <div>없는 페이지</div>}</Suspense>
+        <Suspense fallback={<LoadingFallback />}>{element ?? <div>없는 페이지</div>}</Suspense>
       </CurrentPathContext.Provider>
     </div>
   );

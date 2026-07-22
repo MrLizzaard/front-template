@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider as JotaiProvider } from "jotai";
 import { ConfigProvider } from "antd";
 import AuthPage from "./apps/AuthPage";
+import LoadingFallback from "./components/LoadingFallback";
 import theme from "./theme";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <ConfigProvider theme={theme}>
       <JotaiProvider>
         <QueryClientProvider client={queryClient}>
-          <Suspense fallback={<>로딩중</>}>
+          <Suspense fallback={<LoadingFallback fullscreen />}>
             <AuthPage />
           </Suspense>
         </QueryClientProvider>
